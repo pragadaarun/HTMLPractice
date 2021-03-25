@@ -1,0 +1,88 @@
+<!doctype html>
+<title>Flex Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  .headerContainer{
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      background: tomato;
+      font-weight: bold;
+      padding: 10px;
+    }
+  .footerContainer{
+        display: flex;
+        flex-flow: column-wrap;
+        text-align: center;
+        background-color: lawngreen;
+        font-weight: bold;
+        padding: 50px;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: orange;
+    flex: 1;
+    font-weight: bold;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex-flow: co wrap;
+    flex: 5;
+    text-align: center;
+    background: deepskyblue;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 4;
+    min-height: 60vh;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav {
+    padding: 1em;
+    text-align: center;
+  }
+  article{
+      padding: 10px;
+      margin: 10px;
+      background: aqua;
+      border: dodgerblue;
+  }
+</style>
+<body>
+  <nav class="col-1">Left</nav>
+  <div class="col-2">
+  	<header class="headerContainer"><h1>HEADER - Sample FlexBox Example</h1></header>
+    <main class="content">
+    <article>
+        <h2>First article</h2>
+
+        <p>If you’re going to be a person who tries lots of things, you also have to become a person who’s not afraid to quit them if they don’t work or take up too much time.</p>
+    </article>
+    <article>
+        <h2>Second article</h2>
+
+        <p>The solution is not to obsess over how to increase your forever-limited supply of time, but rather to consider how to decrease the demands of what you want to do with that time.</p>
+    </article>
+    <article>
+        <h2>Third article</h2>
+
+        <p>I framed my creation and sharing of this post as a generous act — I’m not ‘selling’ to people, I’m trying to help them. Both things are true, but there’s nothing wrong with that.</p>
+    </article>
+    </main>
+  	<footer class="footerContainer">Footer</footer>
+  </div>
+</body>
